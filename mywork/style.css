@@ -1,0 +1,179 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+
+.header-left{
+    font-size: 30px;
+}
+
+.header-right{
+    font-size: 15px;
+    word-spacing: 30px;
+}
+
+.header-bottom{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+
+.header-bottom img{
+    width: 100%;
+}
+
+.icon{
+    font-size: 25px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 100px;
+}
+
+.address{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section2{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+
+.img-up img{
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+
+.img-down img{
+    width: 250px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.section3{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+dl{
+    margin-bottom: 50px;
+    border-top: black 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dl dt{
+    border-bottom: black 1px solid;
+    padding: 15px;
+}
+
+dl dd{
+    border-bottom: black 1px solid;
+    padding: 15px;
+    width: 80%;
+}
+
+.section4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+    width: 100vw;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box2 p{
+    padding-right: 80px;
+    width: 1000px;
+    font-size: 15px;
+}
+
+#name{
+    width: 800px;
+    height: 30px;
+}
+
+#email{
+    width: 800px;
+    height: 30px;
+}
+
+#message{
+    width: 800px;
+    height: 200px;
+}
+
+.button{
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    width: 190px;
+    height: 50px;
+}
+
+footer{
+    width: 100vw;
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}

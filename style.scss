@@ -1,0 +1,295 @@
+// main
+body{
+    width: 100vw;
+    height: 100vh;
+    animation-name:fadeInAnime;
+    animation-duration:4s;
+    animation-fill-mode:forwards;
+    opacity:0;
+
+    @keyframes fadeInAnime{
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+}
+}
+
+main{
+  width: 100vw;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 205px;
+    display: flex;
+    padding: 2% 2% 3% 2%;
+
+    .header-left{
+        width: 50%;
+        img{
+            width: 25%;
+        }
+    }
+
+    .header-right{
+        width: 50%;
+        ul{
+            display: flex;
+            justify-content: flex-end;
+        }
+            li{
+                font-family: 'Playfair Display', serif;
+                padding-right: 5%;
+                padding-top: 8%;
+                transition: font-size 1s;
+
+                :hover{
+                    color: rgb(255, 163, 250);
+                  }
+            }
+                
+                a{
+                    text-decoration: none;
+                }
+            
+        
+    }
+}
+
+
+
+.keyvisual{
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7%;
+
+    img{
+        width: 90%;
+    }
+}
+
+// about
+
+header{
+  img:hover {
+   	opacity: 0.5 ;
+    }
+} 
+
+  .contents{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Playfair Display', serif;
+    padding: 0% 5% 5% 5%;
+
+    .title{
+        font-size: 500%;
+        padding-right: 5%;
+        width: 40%;
+        text-align: right;
+    }
+    
+    h1{
+      font-size: 150%;
+    }
+
+    .content{
+        width: 60%;
+        p{
+            font-size: 110%;
+            padding-top: 5%;
+
+            span{
+                margin-left: 0%;
+            }
+        }
+    }
+}
+
+@media ( min-width : 0px ){
+  .contents{
+    .title{
+      padding-bottom: 3%;
+    }
+  }
+}
+
+// experience
+
+header{
+  img:hover {
+	opacity: 0.5 ;
+  }
+}
+
+.experience{
+    width: 100vw;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Playfair Display', serif;
+    padding-left: 20%;
+
+}
+
+.timeline {
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+  }
+  .timeline > li {
+    margin-bottom: 60px;
+  }
+  
+  /* for Desktop */
+  @media ( min-width : 640px ){
+    .timeline > li {
+      overflow: hidden;
+      margin: 0;
+      position: relative;
+    }
+    .timeline-date {
+      width: 110px;
+      float: left;
+      padding-top: 20%;
+      font-size: 120%;
+    }
+    .timeline-content {
+      width: 75%;
+      float: left;
+      border-left: 3px #f6e5ee solid;
+      padding-left: 30px;
+      padding-top: 20%;
+      padding-bottom: 5%;
+
+      h3{
+          padding-bottom: 10%;
+          font-size: 150%;
+      }
+
+      p{
+          padding-bottom: 10%;
+      }
+
+      img{
+          width: 500px;
+      }
+     
+      :before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: rgb(248, 171, 210);
+      position: absolute;
+      left: 106px;
+      top: 24px;
+      border-radius: 100%;
+      margin-top: 20%;
+    }
+  }
+}  
+
+// work
+
+header{
+  img:hover {
+	opacity: 0.5 ;
+  }
+}
+
+@media screen and (max-width:767px){
+    header{
+        width: 100vw;
+        height: auto;
+    }
+
+    .contents{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+
+        .title{
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .content{
+            width: 100%;
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .experience{
+        width: 100vw;
+        padding-left: 3%;
+        padding-right: 3%;
+        text-align: center;
+
+        .timeline-date{
+            font-size: 25px;
+            padding-bottom: 5%;
+        }
+
+        .timeline-content{
+            h3{
+                font-size: 20px;
+                padding-bottom: 3%;
+            }
+
+            p{
+                padding-bottom: 3%;
+            }
+        }
+          img{
+              width: 300px;
+          }
+        }
+}
+
+
+.wcontents{
+  width: 100vw;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  padding-bottom: 5%;
+}
+
+.wcontent{
+
+  .wcontent-img{
+    :hover{
+      opacity: .7;
+    }
+    img{
+      width: 400px;
+      padding: 5% 8% 5% 8%;
+    }
+  }
+}
+
+.wcontent-text{
+  text-align: center;
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
