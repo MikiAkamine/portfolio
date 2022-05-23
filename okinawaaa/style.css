@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    margin-top: 0;
+    font-family: "游ゴシック体","YuGothic","游ゴシック","Yu Gothic", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W6", sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+main{
+  width: 100vw;
+}
+
+
+
+#header{
+    margin-top: 0%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container .img{
+    width: 100vw;
+}
+
+.header-main{
+  text-align: center;
+  padding-top: 1%;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.header-main p{
+    font-size: 300%;
+}
+
+.main-title{
+    font-size: 600%;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    animation: image_anime 15s ease-in-out infinite; /* 5秒のアニメーションを繰り返す */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+@keyframes image_anime {
+  0% {
+    background-image: url(./img/h1.jpeg); /* 背景画像1を指定 */
+  }
+  25% {
+    background-image: url(./img/h2.jpeg); /* 背景画像2を指定 */
+  }
+  50% {
+    background-image: url(./img/h3.jpeg); /* 背景画像1を指定 */
+  }
+  75% {
+    background-image: url(./img/h4.jpeg); /* 背景画像1を指定 */
+  }
+  100% {
+    background-image: url(./img/h5.jpeg); /* 背景画像1を指定 */
+  }
+}
+
+#sub-title{
+      text-align: center;
+      padding-top: 5%;
+      font-family: 'Open Sans Condensed', sans-serif;
+      font-size: 400%;
+  }
+
+.content{
+    width: 100vw;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content2{
+    width: 100vw;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.weather{
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.product{
+  height: auto;
+}
+
+.content-text{
+  text-align: center;
+  padding-top: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.content-title{
+  font-size: 35px;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width : 780px){
+  body{
+    margin: 0;
+    margin-top: 0;
+    font-family: "游ゴシック体","YuGothic","游ゴシック","Yu Gothic", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W6", sans-serif;
+  }
+  .main-title{
+    font-size: 60px;
+  }
+  .header-main p{
+    font-size: 20px;
+  }
+  #sub-title{
+    font-size: 30px;
+  }
+  .content-title{
+    font-size: 25px;
+  }
+  .introduction{
+    font-size: 15px;
+  }
+  .container{
+    height: 50vh;
+    width: 100vw;
+  }
+  #header{
+    background-image: url('./img/h1_01.jpeg');
+    animation: image_animeSp 15s ease-in-out infinite; /* 5秒のアニメーションを繰り返す */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+  @keyframes image_animeSp {
+    0% {
+      background-image: url('./img/h1_01.jpeg'); /* 背景画像1を指定 */
+    }
+    25% {
+      background-image: url('./img/h2_02.jpeg'); /* 背景画像2を指定 */
+    }
+    50% {
+      background-image: url('./img/h3_3.jpeg'); /* 背景画像1を指定 */
+    }
+    75% {
+      background-image: url('./img/h4_4.jpeg'); /* 背景画像1を指定 */
+    }
+    100% {
+      background-image: url('./img/h5_5.jpeg'); /* 背景画像1を指定 */
+    }
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .content2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
