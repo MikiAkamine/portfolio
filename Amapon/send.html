@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c7f31e360f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Amapon</title>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <div class="header-left">
+                <h1 class="main-title">Amapon</h1>
+            </div>
+            <div class="header-right">
+                <form id="form1" action="" autocomplete="off">
+                    <input id="sbox" id="s" name="s" type="text" placeholder="キーワードから探す">
+                    <input id="sbtn" type="submit" class="use_icon" value="&#xf002">
+                </form>
+                <nav id="navi">
+                    <ul class="nav-menu">
+                        <li><a href="#s">Search</a></li>
+                        <li><a href="./index.html#sub-title">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="toggle_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mask"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="send-inner">
+            <div class="send-top">
+                <p class="send-title">送信が完了しました。</p>
+            </div>
+            <div class="send-bottom">
+                <div class="send-bottom-inner">
+                    <p class="send-text">
+                        この度は、お問い合わせいただき誠にありがとうございます。<br>
+                        お問い合わせ内容は無事送信されました。<br>
+                        担当者が確認の上ご連絡致しますので、今しばらくお待ち下さい。
+                    </p>
+                </div>
+                <div class="button2">
+                    <a href="./index.html" class="btn-box2"><span>トップページに戻る</span></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div id="contact">
+                <h2 class="sub-title">Contact</h2>
+                <div class="contact-text">
+                    <div class="contact-info">
+                        <p>株式会社Amapon</p>
+                        <p>〒904-0115 沖縄県中頭郡北谷町字美浜16-2 メディアステーション2階<br>
+                            TEL : 098-926-5140<br>
+                            FAX : 098-926-5141
+                        </p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.3205124417527!2d127.75570851510516!3d26.31611909185239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e513051b16791d%3A0xa33266878d651fc5!2z44CSOTA0LTAxMTUg5rKW57iE55yM5Lit6aCt6YOh5YyX6LC355S6576O5rWc77yR77yW4oiS77yS!5e0!3m2!1sja!2sjp!4v1645247589715!5m2!1sja!2sjp"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#">
+                            <dl>
+                                <dt><label for="name">Name:</label></dt>
+                                <div id="cation1">※名前が未入力です。</div>
+                                <dd><input type="text" id="name" name="your-name" placeholder=""></dd>
+                                <dt><label for="email">Mail:</label></dt>
+                                <div id="cation2">※メールアドレスが未入力です。</div>
+                                <dd><input type="email" id="email" name="your-email" placeholder=""></dd>
+                                <dt><label for="message">Message:</label></dt>
+                                <div id="cation3">※内容が未入力です。</div>
+                                <dd><textarea name="your-message" id="message" placeholder=""></textarea></dd>
+                            </dl>
+                            <div class="button">
+                                <a href="./send.html" class="btn-box"><span>SEND</span></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p class="copyright-text">&copy; Amapon</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

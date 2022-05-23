@@ -1,0 +1,232 @@
+@charset "UTF-8";
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'BhuTuka Expanded One', cursive;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-right {
+  width: 60%;
+  height: 100%;
+  background-image: url("../../header01.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-left {
+  width: 40%;
+  height: 100%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header-left .main-title {
+  font-size: 100px;
+  margin-top: 40%;
+  margin-bottom: 15%;
+}
+
+.header-left .ours {
+  font-size: 20px;
+}
+
+main img:hover {
+  opacity: 0.5;
+}
+
+.section1 {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.section1 #otani {
+  font-size: 40px;
+  padding-bottom: 5%;
+}
+
+.section2 {
+  margin-bottom: 10%;
+}
+
+.section2 #akamine {
+  font-size: 40px;
+  padding-bottom: 5%;
+}
+
+
+
+/*========= ぼかしのためのCSS ===============*/
+.mainblur {
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+}
+
+/*========= ナビゲーションのためのCSS ===============*/
+#g-nav {
+  /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+  position: fixed;
+  z-index: -1;
+  opacity: 0;
+  /*はじめは透過0*/
+  /*ナビの位置と形状*/
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  /*ナビの高さ*/
+  background: rgba(255, 255, 255, 0.3);
+  /*背景を少し透過させる*/
+  /*動き*/
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/*アクティブクラスがついたら透過なしにして最前面へ*/
+#g-nav.panelactive {
+  opacity: 1;
+  z-index: 999;
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  display: none;
+  /*はじめは非表示*/
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#g-nav.panelactive ul {
+  display: block;
+}
+
+/*リストのレイアウト設定*/
+#g-nav li {
+  list-style: none;
+  text-align: center;
+}
+
+#g-nav li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1 {
+  position: fixed;
+  z-index: 9999;
+  /*ボタンを最前面に*/
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+/*×に変化*/
+.openbtn1 span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #666;
+  width: 45%;
+}
+
+.openbtn1 span:nth-of-type(1) {
+  top: 15px;
+}
+
+.openbtn1 span:nth-of-type(2) {
+  top: 23px;
+}
+
+.openbtn1 span:nth-of-type(3) {
+  top: 31px;
+}
+
+.openbtn1.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+          transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.openbtn1.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.openbtn1.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+          transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(171, 253, 226, 0.213);
+}
+
+footer button {
+  background-color: rgba(122, 236, 236, 0.44);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 2%;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+footer button:hover {
+  opacity: 0.7;
+}
+
+footer p {
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */

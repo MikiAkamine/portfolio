@@ -1,0 +1,182 @@
+main{
+    background-image: url(./img-2/hill.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left img{
+    height: 30px;
+    padding-left: 80px;
+    padding-top: 25px;
+}
+
+.header-right{
+    color: white;
+    font-size: 20px;
+    padding-right: 100px;
+    padding-top: 40px;
+}
+
+.theme{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
+}
+
+.main-theme{
+    font-size: 100px;
+}
+
+.theme p{
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+#About{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.about-contents{
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    align-items: center;
+}
+
+.contents-left img{
+    height: 300px;
+}
+
+.contents-right{
+    padding-left: 50px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.contents-right p{
+    padding-top: 30px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+#Plan{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+.plan-contents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.box1{
+    border: black 1px solid;
+    padding: 30px 30px 30px 30px;
+}
+
+.box2{
+    border: black 1px solid;
+    padding: 30px 30px 30px 30px;
+    margin-left: 20px;
+}
+
+.box3{
+    border: black 1px solid;
+    padding: 30px 30px 30px 30px;
+    margin-left: 20px;
+}
+
+h4{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+h5{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+h6{
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+#Contact{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+}
+
+h7{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contact-contents{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input, text{
+    width: 500px;
+    height: 35px;
+    border-radius: 10%;
+}
+
+input, email{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10%;
+}
+
+textarea{
+    width: 500px;
+    height: 300px;
+    margin-bottom: 15px;
+    border-radius: 10%;
+}
+
+button{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 10%;
+    margin-bottom: 200px;
+}
+
+footer{
+    height: 80px;
+    width: 100vw;
+    background-color: darkblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
